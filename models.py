@@ -13,7 +13,6 @@ class Book:
             'copies': self.copies
         }
 
-    @staticmethod
     def from_dict(data):
         return Book(data['title'], data['author'], data['isbn'], data.get('copies', 1))
 
@@ -28,6 +27,5 @@ class User:
             'name': self.name
         }
 
-    @staticmethod
     def from_dict(data):
         return User(data['user_id'], data['name'])

@@ -23,7 +23,10 @@ class UserManager:
             print(user.to_dict())
 
     def search_users(self, attribute, value):
-        return [user for user in self.users if getattr(user, attribute, None) == value]
+        if attribute == 'user_id':
+            return [user for user in self.users if user.user_id == value]
+        else:
+            return []
 
     def update_user(self, user_id, name=None):
         for user in self.users:
