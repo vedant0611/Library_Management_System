@@ -8,10 +8,16 @@ class UserManager:
         self.users = self.storage.load_users()
 
     def add_user(self, user_id, name):
+        # Check if user with the same user_id already exists
+        if any(user.user_id == user_id for user in self.users):
+            print(f"User with ID '{user_id}' already exists. Cannot add duplicate users.")
+            return
+        
         new_user = User(user_id, name)
         self.users.append(new_user)
         self.storage.save_users(self.users)
-
+        print("User added successfully.")
+        
     def list_users(self):
         for user in self.users:
             print(user.to_dict())
