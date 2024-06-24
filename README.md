@@ -38,7 +38,7 @@ This project is a simple Library Management System implemented in Python. It all
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/library-management-system.git
+   git clone https://github.com/vedant0611/Library_Management_System.git
    cd library-management-system
    ```
 
