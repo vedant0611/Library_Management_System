@@ -71,8 +71,7 @@ This project is a simple Library Management System implemented in Python. It all
 - Ensure books have unique ISBN numbers.
 - Ensure users have unique user IDs.
 - Handle cases where books or users are not found.
-- Check for available copies before allowing checkout.
-- Ensure the book is checked out before allowing check-in.
+
 
 ## Contribution
 
